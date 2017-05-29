@@ -3,7 +3,7 @@
   "description": "Website crawler and differencer",
   "version": "0.3.1",
   "author": "Mike Moulton <mike@meltmedia.com>",
-  "contributors": [ 
+  "contributors": [
     { "name": "Nick Crohn", "email": "nick@meltmedia.com" }
   ],
   "dependencies": {
@@ -13,8 +13,7 @@
     "optimist": "0.3.x",
     "node_hash": "0.2.x",
     "colors": ">= 0.6.0-1",
-    "underscore": "1.4.x",
-    "prettyjson": "0.7.x"
+    "underscore": "1.4.x"
   },
   "devDependencies": {
     "mocha": "*",

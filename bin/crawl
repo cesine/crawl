@@ -52,8 +52,7 @@ var crawler = require('../lib/crawler'),
     util = require('util'),
     urlUtil = require('url'),
     colors = require('colors'),
-    _ = require('underscore'),
-    prettyjson = require('prettyjson');
+    _ = require('underscore');
 
 var argv = optimist.argv,
     left = argv._[0],
@@ -109,7 +108,7 @@ if (left && right) {
       process.stdout.write(JSON.stringify(diffs, null, 2));
     }
 
-  });  
+  });
 
 }
 
@@ -127,7 +126,7 @@ else if (left && !right) {
 
     // output pretty results
     if (argv.P) {
-      console.log("Crawl results: \n".grey + prettyjson.render(leftPages));
+      console.log("Crawl results: \n".grey + JSON.stringify(leftPages, null, 2));
     }
 
     // output json
